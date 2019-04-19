@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        app:menu="@menu/main_toolbar"
+        android:gravity="center_horizontal"
+        app:titleTextColor="#FFFFFF"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_nav_bar"
+        android:layout_below="@id/main_app_bar"
+        />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textAlignment="gravity"
+        android:elevation="4dp"
+        app:elevation="24dp"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconSize="25dp"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="@color/common_google_signin_btn_text_dark_default"
+        app:menu="@menu/main_bottom_navigation_bar">
+    </android.support.design.widget.BottomNavigationView>
+
+
+
+
+</RelativeLayout>

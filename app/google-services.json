@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "166958130625",
+    "firebase_url": "https://ngoproject-de7ca.firebaseio.com",
+    "project_id": "ngoproject-de7ca",
+    "storage_bucket": "ngoproject-de7ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166958130625:android:d67566ca824580c9",
+        "android_client_info": {
+          "package_name": "com.belal.projects.ngo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166958130625-9290v20s097rmfkqa28u5jg37fol0eej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.belal.projects.ngo",
+            "certificate_hash": "389648d1d44f361a07eaef0358566977a1d8b04a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHfALGH5klfpYtwWC1JhfYeNuiYHau1Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166958130625-ftf9c2g16e35h38368dcqshd53eqrq86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
