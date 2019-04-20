@@ -1,32 +1,29 @@
 package com.belal.projects.ngo.activities;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import android.app.ProgressDialog;
+
 import com.belal.projects.ngo.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.HashMap;
 import java.util.regex.Pattern;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -58,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById( R.id.reg_toolbar );
         setSupportActionBar( mToolbar );
         getSupportActionBar().setTitle( "Create New Account" );
-        getSupportActionBar().setLogo(R.drawable.small_logo2);
+        getSupportActionBar().setLogo(R.drawable.charitable_small_logo2);
         getSupportActionBar().setDisplayUseLogoEnabled( true );
 
         // progress dialog
@@ -214,7 +211,7 @@ public class RegisterActivity extends AppCompatActivity {
                             HashMap<String, String> userMap = new HashMap <>(  );
                             userMap.put( "first_name", first_name );
                             userMap.put( "last_name", last_name );
-                            userMap.put( "status", "Hi there , i'm using NGOs App" );
+                            userMap.put( "status", "Hi there , i'm using CharitAble App" );
                             userMap.put( "profile_image", "default" );
                             userMap.put( "thumb_image", "default" );
                             mDatabase.setValue( userMap ).addOnCompleteListener( new OnCompleteListener <Void>() {

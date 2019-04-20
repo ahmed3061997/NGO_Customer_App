@@ -1,12 +1,13 @@
 package com.belal.projects.ngo.activities;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.belal.projects.ngo.R;
 import com.google.firebase.FirebaseApp;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
     // duration of watit

@@ -12,7 +12,6 @@ public class Users {
     public Users(){}
 
     // now we need to get getter and setters ...
-
     public Users(String first_name, String last_name, String status, String profile_image, String thumb_image) {
         this.first_name = first_name;
         this.last_name = last_name;

@@ -7,7 +7,7 @@
     tools:context=".activities.MainActivity">
 
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:gravity="center_horizontal"
         app:titleTextColor="#FFFFFF"
         android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
         android:id="@+id/main_fragment_container"
@@ -30,7 +30,7 @@
         />
 
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         app:itemIconTint="#FFFFFF"
         app:itemTextColor="@color/common_google_signin_btn_text_dark_default"
         app:menu="@menu/main_bottom_navigation_bar">
-    </android.support.design.widget.BottomNavigationView>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 

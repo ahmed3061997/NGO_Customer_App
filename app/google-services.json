@@ -21,6 +21,10 @@
             "package_name": "com.belal.projects.ngo",
             "certificate_hash": "389648d1d44f361a07eaef0358566977a1d8b04a"
           }
+        },
+        {
+          "client_id": "166958130625-ftf9c2g16e35h38368dcqshd53eqrq86.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
