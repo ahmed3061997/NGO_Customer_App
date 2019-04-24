@@ -52,7 +52,7 @@ public class StatusActivity extends AppCompatActivity {
         // firebase Database
         mCurrentUser = FirebaseAuth.getInstance().getCurrentUser();
         String Current_User_Id = mCurrentUser.getUid();
-        mStatusDatabase = FirebaseDatabase.getInstance().getReference().child( "Users" ).child( Current_User_Id );
+        mStatusDatabase = FirebaseDatabase.getInstance().getReference().child( "User" ).child( Current_User_Id );
 
         // fields
         mStatus = (TextInputEditText) findViewById( R.id.status_field );

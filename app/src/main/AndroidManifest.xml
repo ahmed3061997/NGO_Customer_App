@@ -15,9 +15,11 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl">
-
-
-        <activity android:name=".activities.StatusActivity"></activity>
+        <activity android:name=".activities.ChatActivity"
+            android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <activity android:name=".activities.StatusActivity"
+            android:parentActivityName=".activities.MainActivity" />
         <activity android:name=".activities.EventDetailsActivity" />
         <activity android:name=".activities.CaseDetailsActivity" />
         <activity android:name=".activities.FavoriteActivity" />
@@ -33,11 +35,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.StartActivity" />
-
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>
-
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
-
 
 </manifest>

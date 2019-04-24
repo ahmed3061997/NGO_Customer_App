@@ -66,7 +66,7 @@ public class MyAccountFragment extends Fragment {
         mDatabase.addValueEventListener( new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                final String first_name = dataSnapshot.child( "first_name" ).getValue().toString();
+                String first_name = dataSnapshot.child( "first_name" ).getValue().toString();
                 String last_name = dataSnapshot.child( "last_name" ).getValue().toString();
                 String status = dataSnapshot.child( "status" ).getValue().toString();
                 final String profile_image = dataSnapshot.child( "profile_image" ).getValue().toString();

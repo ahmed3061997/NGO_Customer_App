@@ -1,6 +1,6 @@
 package com.belal.projects.ngo.models;
 
-public class Users {
+public class User {
     // make sure it matches the name of childs in database or it wont work
     public String first_name ;
     public String last_name ;
@@ -9,10 +9,10 @@ public class Users {
     public String thumb_image ;
 
     // empty constructor without this the app may crash
-    public Users(){}
+    public User(){}
 
     // now we need to get getter and setters ...
-    public Users(String first_name, String last_name, String status, String profile_image, String thumb_image) {
+    public User(String first_name, String last_name, String status, String profile_image, String thumb_image) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.status = status;
@@ -35,4 +35,4 @@ public class Users {
     public void setThumb_image(String thumb_image) { this.thumb_image = thumb_image; }
 
 
-} // Users
+} // User

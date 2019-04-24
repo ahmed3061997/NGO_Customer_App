@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:src="@drawable/default_ngo_logo"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/single_conv_image"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="85dp"
+        android:id="@+id/single_conv_name"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="Ngo Name "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/single_conv_last_message"
+        android:textSize="14sp"
+        android:text="Hi there , i'm using CharitAble App"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:layout_alignStart="@+id/single_conv_name"/>
+
+</RelativeLayout>
